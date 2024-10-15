@@ -15,7 +15,7 @@ General request
 
 ## Usage
 ### Prerequisites
-- [Ollama](https://ollama.com/), either running on local
+- [Ollama](https://ollama.com/), running on local
 - [llama3.1](https://ollama.com/library/llama3.1) model installed with Ollama
 
 ### Install dependencies
