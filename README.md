@@ -6,9 +6,11 @@ An example of decision system using potentially* multiple LLM-s
 
 ## Screenshots
 Evangelion themed request
+
 ![screenshot 1](screenshot/1.png)
 
 General request
+
 ![screenshot 1](screenshot/2.png)
 
 ## Usage
