@@ -2,10 +2,12 @@
 
 [![Tests](https://github.com/adamlaszlo91/evangelion-magi-prototype/actions/workflows/tests.yml/badge.svg)](https://github.com/adamlaszlo91/evangelion-magi-prototype/actions/workflows/tests.yml)
 
-An example of decision system using potentially* multiple LLM-s
+A tiny decision making system using the output of LLM(s) with different personas, plus an independent call that merges them into one proposal.
+
+Inspired by the [MAGI in Evangelion](https://evangelion.fandom.com/wiki/Magi).
 
 ## Features
-- Make decisions based on 3 different* LLM responses
+- Propose decisions based on multiple LLM responses
 
 ## Screenshots
 
@@ -14,9 +16,11 @@ General request
 ![screenshot 1](media/screenshot.png)
 
 ## Usage
-### Prerequisites
-- [Ollama](https://ollama.com/), running on local
-- [llama3.1](https://ollama.com/library/llama3.1) model installed with Ollama
+
+### Requirements
+- Python 3.14
+- [Ollama](https://ollama.com/), running on local device
+- [llama3.2](https://ollama.com/library/llama3.2) model installed with Ollama
 
 ### Install dependencies
 ```
@@ -25,7 +29,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Generate decision proposal
+### Start program
 ```
 python3 main.py
+```
+
+### Run tests
+```
+pytest
 ```
