@@ -8,13 +8,10 @@ An example of decision system using potentially* multiple LLM-s
 - Make decisions based on 3 different* LLM responses
 
 ## Screenshots
-Evangelion themed request
-
-![screenshot 1](screenshot/1.png)
 
 General request
 
-![screenshot 1](screenshot/2.png)
+![screenshot 1](media/screenshot.png)
 
 ## Usage
 ### Prerequisites
