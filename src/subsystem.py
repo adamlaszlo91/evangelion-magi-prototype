@@ -3,7 +3,7 @@ from concurrent.futures import Future
 from ollama import chat  # type: ignore
 
 
-class SubSystem:
+class Subsystem:
 
     def __init__(self, system_prompt: str, ollama_model: str) -> None:
         self._system_prompt = system_prompt

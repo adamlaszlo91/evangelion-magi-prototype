@@ -1,4 +1,7 @@
 # evangelion-magi-prototype
+
+[![Tests](https://github.com/adamlaszlo91/evangelion-magi-prototype/actions/workflows/tests.yml/badge.svg)](https://github.com/adamlaszlo91/evangelion-magi-prototype/actions/workflows/tests.yml)
+
 An example of decision system using potentially* multiple LLM-s
 
 ## Features

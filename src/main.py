@@ -1,6 +1,6 @@
 from ascii_logo import ASCII_LOGO
 from threading import Thread
-from subsystem import SubSystem
+from subsystem import Subsystem
 from concurrent.futures import Future
 
 OLLAMA_MODEL = "llama3.2:latest"
@@ -17,7 +17,7 @@ def collect_result(input: str):
         future = Future[str]()
         results[name] = future
         threads.append(
-            SubSystem(SUBSYSTEM_PROMPT.format(role), OLLAMA_MODEL).query(
+            Subsystem(SUBSYSTEM_PROMPT.format(role), OLLAMA_MODEL).query(
                 input, result=future
             )
         )
@@ -32,7 +32,7 @@ def collect_result(input: str):
     print()
     print("Verdict:")
     verdict_result = Future[str]()
-    SubSystem(
+    Subsystem(
         SYSTEM_PROMPT.format(
             input, "\n\n".join([f'"{r.result()}"' for r in results.values()])
         ),
